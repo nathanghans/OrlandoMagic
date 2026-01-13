@@ -10,6 +10,30 @@ A minimal, responsive fan website dedicated to Franz and Moritz Wagner of the Or
 - **Modern UI**: Clean, professional design with smooth animations and interactions
 - **Vanilla JavaScript**: No frameworks required - pure HTML, CSS, and JavaScript
 
+## 🖼️ Adding Real Images
+
+The site currently uses placeholder images. To use real photos:
+
+### Orlando Magic Logo
+1. Download the official logo from:
+   - [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Orlando_Magic_Clear_Logo.svg) (SVG)
+   - [Loodibee](https://loodibee.com/nba/orlando-magic/) (PNG)
+   - [FreeBie Supply](https://freebiesupply.com/logos/orlando-magic-logo/)
+
+2. Replace `assets/images/orlando-magic-logo.png` with your downloaded file
+3. Use PNG or SVG format with transparent background
+
+### Wagner Brothers Photo
+1. Find a photo of Franz and Moritz Wagner together from:
+   - Orlando Magic official website photo galleries
+   - ESPN or Yahoo Sports articles about the Wagner brothers
+   - Getty Images (check licensing)
+
+2. Replace `assets/images/wagner-brothers.jpg` with your photo
+3. Recommended size: 1200px × 675px (16:9 aspect ratio)
+
+**See `assets/images/README.md` for detailed instructions and download links.**
+
 ## 2024-25 Season Stats
 
 ### Franz Wagner (#22)
@@ -28,10 +52,15 @@ A minimal, responsive fan website dedicated to Franz and Moritz Wagner of the Or
 
 ```
 OrlandoMagic/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles with Orlando Magic theme
-├── script.js           # Interactive features and animations
-└── README.md          # This file
+├── assets/
+│   └── images/
+│       ├── orlando-magic-logo.png    # Logo (replace with real logo)
+│       ├── wagner-brothers.jpg       # Hero image (replace with real photo)
+│       └── README.md                 # Image download instructions
+├── index.html                        # Main HTML file
+├── styles.css                        # CSS styles with Orlando Magic theme
+├── script.js                         # Interactive features and animations
+└── README.md                         # This file
 ```
 
 ## Deploying to GitHub Pages

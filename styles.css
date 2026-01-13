@@ -49,6 +49,12 @@ body {
     gap: 1rem;
 }
 
+.logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
 .logo-text h1 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -86,6 +92,37 @@ body {
     padding: 6rem 0;
     position: relative;
     overflow: hidden;
+    min-height: 500px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 90, 141, 0.85) 0%,
+        rgba(0, 119, 192, 0.85) 100%
+    );
+    z-index: 1;
 }
 
 .hero::before {
@@ -99,6 +136,7 @@ body {
         radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
     pointer-events: none;
+    z-index: 2;
 }
 
 .hero-content {
@@ -106,7 +144,7 @@ body {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 
 .hero-title {

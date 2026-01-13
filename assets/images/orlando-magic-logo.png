@@ -1,0 +1,14 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Orlando Magic Logo Placeholder -->
+    <!-- Replace this file with the actual Orlando Magic logo -->
+
+    <!-- Blue circle background -->
+    <circle cx="100" cy="100" r="95" fill="#0077C0"/>
+    <circle cx="100" cy="100" r="95" stroke="white" stroke-width="3"/>
+
+    <!-- Star -->
+    <path d="M100 30L115 75L162 75L125 105L140 150L100 120L60 150L75 105L38 75L85 75L100 30Z" fill="white"/>
+
+    <!-- Text: MAGIC -->
+    <text x="100" y="180" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">MAGIC</text>
+</svg>

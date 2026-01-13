@@ -1,0 +1,40 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Wagner Brothers Placeholder Image -->
+    <!-- Replace this file with an actual photo of Franz and Moritz Wagner -->
+
+    <!-- Background gradient -->
+    <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#005A8D;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0077C0;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <rect width="1200" height="675" fill="url(#bg)"/>
+
+    <!-- Decorative elements -->
+    <circle cx="200" cy="150" r="100" fill="rgba(255,255,255,0.05)"/>
+    <circle cx="1000" cy="500" r="150" fill="rgba(255,255,255,0.05)"/>
+    <circle cx="600" cy="350" r="80" fill="rgba(255,255,255,0.08)"/>
+
+    <!-- Jersey numbers in background -->
+    <text x="300" y="400" font-family="Arial Black, sans-serif" font-size="200" font-weight="900" fill="rgba(255,255,255,0.1)" text-anchor="middle">#22</text>
+    <text x="900" y="400" font-family="Arial Black, sans-serif" font-size="200" font-weight="900" fill="rgba(255,255,255,0.1)" text-anchor="middle">#21</text>
+
+    <!-- Player silhouettes -->
+    <g opacity="0.2">
+        <!-- Left player (Franz) -->
+        <ellipse cx="350" cy="550" rx="60" ry="15" fill="rgba(0,0,0,0.3)"/>
+        <rect x="330" y="400" width="40" height="150" rx="20" fill="white"/>
+        <circle cx="350" cy="370" r="35" fill="white"/>
+
+        <!-- Right player (Moritz) -->
+        <ellipse cx="850" cy="550" rx="60" ry="15" fill="rgba(0,0,0,0.3)"/>
+        <rect x="830" y="400" width="40" height="150" rx="20" fill="white"/>
+        <circle cx="850" cy="370" r="35" fill="white"/>
+    </g>
+
+    <!-- Text overlay -->
+    <text x="600" y="580" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">FRANZ & MORITZ WAGNER</text>
+    <text x="600" y="620" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="middle">Replace with actual photo • See assets/images/README.md</text>
+</svg>
