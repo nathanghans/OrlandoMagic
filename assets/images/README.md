@@ -20,21 +20,37 @@ This folder contains images for the Wagner Brothers fan site.
 ---
 
 ### 2. Wagner Brothers Photo
-**Filename:** `wagner-brothers.jpg` or `wagner-brothers.png`
+**Filename:** `wagner-brothers.webp` (preferred) or `wagner-brothers.jpg`
 
-**Where to find:**
-- **Getty Images:** Search for "Franz Moritz Wagner Orlando Magic" (may require purchase/license)
-- **Orlando Magic Official Site:** https://www.nba.com/magic/photos - Look for team photos
-- **ESPN Photo Gallery:** Search team galleries for Wagner brothers photos
-- **Orlando Sentinel:** https://www.orlandosentinel.com/ - Check sports photo galleries
-- **Yahoo Sports Article:** https://sports.yahoo.com/how-the-wagner-brothers-are-helping-to-shape-the-magic-into-a-playoff-contender-154426135.html
+**Recommended Image (from ClutchPoints):**
+https://wp.clutchpoints.com/wp-content/uploads/2024/11/Magic-news-Franz-Moritz-Wagner-achieve-rare-NBA-brothers-feat-only-seen-once.jpg
 
-**Tip:** Look for photos from the 2024 "Wagner Brothers" documentary or recent team events where both brothers are featured together.
+**How to download:**
+1. Right-click the link above and select "Save Link As..." or "Download Linked File"
+2. The file will download as `.webp` format (this is good - WebP is modern and efficient!)
+3. Save it as `wagner-brothers.webp` in this folder
+
+**Option A: Use WebP (Recommended - Better Performance)**
+- Just save the downloaded file as `wagner-brothers.webp`
+- WebP files are smaller and load faster than JPG
+- Supported by all modern browsers
+
+**Option B: Convert to JPG (if needed)**
+If you prefer JPG format, convert using:
+- **Online:** https://convertio.co/webp-jpg/ or https://cloudconvert.com/webp-to-jpg
+- **Mac:** Open in Preview, File → Export → Format: JPEG
+- **Windows:** Open in Paint, Save As → JPEG
+- **Command line:** `ffmpeg -i wagner-brothers.webp wagner-brothers.jpg`
+
+**Other photo sources:**
+- **Orlando Magic Official Site:** https://www.nba.com/magic/photos
+- **Yahoo Sports:** https://sports.yahoo.com/how-the-wagner-brothers-are-helping-to-shape-the-magic-into-a-playoff-contender-154426135.html
+- **ESPN Photo Gallery:** Search team galleries
 
 **Image specifications:**
 - Aspect ratio: 16:9 or 3:2 recommended
 - Minimum resolution: 1200px width
-- Format: JPG or PNG
+- Format: WebP, JPG, or PNG
 - File size: Keep under 500KB (optimize if needed)
 
 ---

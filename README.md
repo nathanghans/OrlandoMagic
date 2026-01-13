@@ -24,13 +24,15 @@ The site currently uses placeholder images. To use real photos:
 3. Use PNG or SVG format with transparent background
 
 ### Wagner Brothers Photo
-1. Find a photo of Franz and Moritz Wagner together from:
+**Quick Download:**
+1. Right-click and download this image: [Wagner Brothers Photo](https://wp.clutchpoints.com/wp-content/uploads/2024/11/Magic-news-Franz-Moritz-Wagner-achieve-rare-NBA-brothers-feat-only-seen-once.jpg)
+2. Save as `assets/images/wagner-brothers.webp` (WebP format is recommended - it's smaller and faster!)
+3. Or convert to JPG if preferred (see `assets/images/README.md` for conversion tools)
+
+**Alternative sources:**
    - Orlando Magic official website photo galleries
    - ESPN or Yahoo Sports articles about the Wagner brothers
    - Getty Images (check licensing)
-
-2. Replace `assets/images/wagner-brothers.jpg` with your photo
-3. Recommended size: 1200px × 675px (16:9 aspect ratio)
 
 **See `assets/images/README.md` for detailed instructions and download links.**
 
@@ -54,13 +56,14 @@ The site currently uses placeholder images. To use real photos:
 OrlandoMagic/
 ├── assets/
 │   └── images/
-│       ├── orlando-magic-logo.png    # Logo (replace with real logo)
-│       ├── wagner-brothers.jpg       # Hero image (replace with real photo)
-│       └── README.md                 # Image download instructions
-├── index.html                        # Main HTML file
-├── styles.css                        # CSS styles with Orlando Magic theme
-├── script.js                         # Interactive features and animations
-└── README.md                         # This file
+│       ├── orlando-magic-logo.png         # Logo (replace with real logo)
+│       ├── wagner-brothers.webp           # Hero image - WebP format (recommended)
+│       ├── wagner-brothers.jpg            # Hero image - JPG fallback (placeholder)
+│       └── README.md                      # Image download instructions
+├── index.html                             # Main HTML file
+├── styles.css                             # CSS styles with Orlando Magic theme
+├── script.js                              # Interactive features and animations
+└── README.md                              # This file
 ```
 
 ## Deploying to GitHub Pages
