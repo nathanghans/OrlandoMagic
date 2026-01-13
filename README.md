@@ -26,8 +26,8 @@ The site currently uses placeholder images. To use real photos:
 ### Wagner Brothers Photo
 **Quick Download:**
 1. Right-click and download this image: [Wagner Brothers Photo](https://wp.clutchpoints.com/wp-content/uploads/2024/11/Magic-news-Franz-Moritz-Wagner-achieve-rare-NBA-brothers-feat-only-seen-once.jpg)
-2. Save as `assets/images/wagner-brothers.webp` (WebP format is recommended - it's smaller and faster!)
-3. Or convert to JPG if preferred (see `assets/images/README.md` for conversion tools)
+2. Save as `assets/images/wagner-brothers.webp`, `wagner-brothers.avif`, or `wagner-brothers.jpg`
+3. **Modern formats** (AVIF/WebP) are recommended - they're smaller and faster!
 
 **Alternative sources:**
    - Orlando Magic official website photo galleries
@@ -38,8 +38,10 @@ The site currently uses placeholder images. To use real photos:
 **Quick Download:**
 1. **Franz Wagner:** Visit [NBA.com Player Page](https://www.nba.com/player/1630532/franz-wagner) or [ESPN](https://www.espn.com/nba/player/_/id/4566434/franz-wagner)
 2. **Moritz Wagner:** Visit [NBA.com Player Page](https://www.nba.com/player/1629011/moritz-wagner) or [ESPN](https://www.espn.com/nba/player/_/id/3150844/moritz-wagner)
-3. Save headshots as `franz-wagner.webp` and `moritz-wagner.webp` (or .jpg)
+3. Save headshots with appropriate names: `franz-wagner.[avif/webp/jpg]` and `moritz-wagner.[avif/webp/jpg]`
 4. Photos will appear with a faded blue overlay and jersey numbers on top
+
+**Supported formats:** AVIF (best), WebP (great), or JPG (universal)
 
 **See `assets/images/README.md` for detailed instructions and download links.**
 
@@ -64,12 +66,15 @@ OrlandoMagic/
 ├── assets/
 │   └── images/
 │       ├── orlando-magic-logo.png         # Logo (replace with real logo)
-│       ├── wagner-brothers.webp           # Hero image - WebP format (recommended)
-│       ├── wagner-brothers.jpg            # Hero image - JPG fallback (placeholder)
-│       ├── franz-wagner.webp              # Franz headshot - WebP (recommended)
-│       ├── franz-wagner.jpg               # Franz headshot - JPG (placeholder)
-│       ├── moritz-wagner.webp             # Moritz headshot - WebP (recommended)
-│       ├── moritz-wagner.jpg              # Moritz headshot - JPG (placeholder)
+│       ├── wagner-brothers.avif           # Hero image - AVIF format (best)
+│       ├── wagner-brothers.webp           # Hero image - WebP format (fallback)
+│       ├── wagner-brothers.jpg            # Hero image - JPG (universal fallback)
+│       ├── franz-wagner.avif              # Franz headshot - AVIF (best)
+│       ├── franz-wagner.webp              # Franz headshot - WebP (fallback)
+│       ├── franz-wagner.jpg               # Franz headshot - JPG (universal fallback)
+│       ├── moritz-wagner.avif             # Moritz headshot - AVIF (best)
+│       ├── moritz-wagner.webp             # Moritz headshot - WebP (fallback)
+│       ├── moritz-wagner.jpg              # Moritz headshot - JPG (universal fallback)
 │       └── README.md                      # Image download instructions
 ├── index.html                             # Main HTML file
 ├── styles.css                             # CSS styles with Orlando Magic theme

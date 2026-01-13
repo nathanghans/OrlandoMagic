@@ -20,27 +20,33 @@ This folder contains images for the Wagner Brothers fan site.
 ---
 
 ### 2. Wagner Brothers Photo
-**Filename:** `wagner-brothers.webp` (preferred) or `wagner-brothers.jpg`
+**Filename:** `wagner-brothers.avif` (best), `wagner-brothers.webp` (great), or `wagner-brothers.jpg` (universal)
 
 **Recommended Image (from ClutchPoints):**
 https://wp.clutchpoints.com/wp-content/uploads/2024/11/Magic-news-Franz-Moritz-Wagner-achieve-rare-NBA-brothers-feat-only-seen-once.jpg
 
 **How to download:**
 1. Right-click the link above and select "Save Link As..." or "Download Linked File"
-2. The file will download as `.webp` format (this is good - WebP is modern and efficient!)
-3. Save it as `wagner-brothers.webp` in this folder
+2. The file will download as `.webp` or `.avif` format (both are great - modern and efficient!)
+3. Save it as `wagner-brothers.avif` or `wagner-brothers.webp` in this folder
 
-**Option A: Use WebP (Recommended - Better Performance)**
-- Just save the downloaded file as `wagner-brothers.webp`
+**Format Options (in order of preference):**
+
+**Option A: Use AVIF (Best - Highest Quality & Smallest Size)**
+- AVIF offers the best compression and quality
+- Even smaller file sizes than WebP
+- Supported by Chrome, Edge, Firefox, Safari (2022+)
+
+**Option B: Use WebP (Great - Better Performance)**
 - WebP files are smaller and load faster than JPG
-- Supported by all modern browsers
+- Excellent browser support (all modern browsers)
 
-**Option B: Convert to JPG (if needed)**
-If you prefer JPG format, convert using:
-- **Online:** https://convertio.co/webp-jpg/ or https://cloudconvert.com/webp-to-jpg
+**Option C: Convert to JPG (Universal Compatibility)**
+Convert using:
+- **Online:** https://convertio.co/ (supports AVIF/WebP to JPG)
 - **Mac:** Open in Preview, File → Export → Format: JPEG
-- **Windows:** Open in Paint, Save As → JPEG
-- **Command line:** `ffmpeg -i wagner-brothers.webp wagner-brothers.jpg`
+- **Windows:** Use Paint or online converter
+- **Command line:** `ffmpeg -i input.avif output.jpg` or `ffmpeg -i input.webp output.jpg`
 
 **Other photo sources:**
 - **Orlando Magic Official Site:** https://www.nba.com/magic/photos
@@ -50,13 +56,13 @@ If you prefer JPG format, convert using:
 **Image specifications:**
 - Aspect ratio: 16:9 or 3:2 recommended
 - Minimum resolution: 1200px width
-- Format: WebP, JPG, or PNG
-- File size: Keep under 500KB (optimize if needed)
+- Format: AVIF (best), WebP, JPG, or PNG
+- File size: Keep under 500KB (AVIF/WebP usually much smaller)
 
 ---
 
 ### 3. Franz Wagner Player Photo
-**Filename:** `franz-wagner.webp` (preferred) or `franz-wagner.jpg`
+**Filename:** `franz-wagner.avif` (best), `franz-wagner.webp` (great), or `franz-wagner.jpg` (universal)
 
 **Where to find:**
 - **NBA.com:** https://www.nba.com/player/1630532/franz-wagner - Official headshots and action photos
@@ -67,13 +73,13 @@ If you prefer JPG format, convert using:
 **Image specifications:**
 - Aspect ratio: 4:5 or 3:4 (portrait orientation recommended)
 - Minimum resolution: 800px width
-- Format: WebP, JPG, or PNG
+- Format: AVIF (best), WebP (great), JPG, or PNG (universal)
 - Crop: Headshot or upper body preferred
 
 ---
 
 ### 4. Moritz Wagner Player Photo
-**Filename:** `moritz-wagner.webp` (preferred) or `moritz-wagner.jpg`
+**Filename:** `moritz-wagner.avif` (best), `moritz-wagner.webp` (great), or `moritz-wagner.jpg` (universal)
 
 **Where to find:**
 - **NBA.com:** https://www.nba.com/player/1629011/moritz-wagner - Official headshots and action photos
@@ -84,7 +90,7 @@ If you prefer JPG format, convert using:
 **Image specifications:**
 - Aspect ratio: 4:5 or 3:4 (portrait orientation recommended)
 - Minimum resolution: 800px width
-- Format: WebP, JPG, or PNG
+- Format: AVIF (best), WebP (great), JPG, or PNG (universal)
 - Crop: Headshot or upper body preferred
 
 ---
