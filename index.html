@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fan website dedicated to Franz and Moritz Wagner of the Orlando Magic">
+    <title>Wagner Brothers | Orlando Magic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="24" fill="#0077C0" stroke="white" stroke-width="2"/>
+                        <path d="M25 10L30 20L40 22L32 30L34 40L25 35L16 40L18 30L10 22L20 20L25 10Z" fill="white"/>
+                    </svg>
+                    <div class="logo-text">
+                        <h1>Orlando Magic</h1>
+                        <p>Wagner Brothers</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#players" class="nav-link">Players</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">The Wagner Brothers</h2>
+                <p class="hero-subtitle">Two Brothers, One Dream, Orlando Magic</p>
+                <p class="hero-description">
+                    Franz and Moritz Wagner have brought their German precision, basketball IQ,
+                    and undeniable chemistry to the Orlando Magic. Together, they're helping build
+                    a new era of Magic basketball with skill, passion, and brotherhood.
+                </p>
+                <a href="#players" class="hero-button">Meet the Players</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Players Section -->
+    <section class="players" id="players">
+        <div class="container">
+            <h2 class="section-title">Player Profiles</h2>
+
+            <div class="player-cards">
+                <!-- Franz Wagner Card -->
+                <div class="player-card" data-player="franz">
+                    <div class="player-image">
+                        <div class="image-placeholder">
+                            <span class="jersey-number">#22</span>
+                        </div>
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">Franz Wagner</h3>
+                        <p class="player-position">Forward</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">24.2</span>
+                                <span class="stat-label">PPG</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5.7</span>
+                                <span class="stat-label">RPG</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.7</span>
+                                <span class="stat-label">APG</span>
+                            </div>
+                        </div>
+                        <div class="player-bio">
+                            <p>
+                                The younger Wagner brother has emerged as a cornerstone of the Magic franchise.
+                                Franz's versatility and two-way play make him one of the NBA's rising stars.
+                                In the 2024-25 season, he averaged a career-high 24.2 points per game,
+                                ranking 15th in the NBA in scoring. His ability to score, facilitate, and
+                                defend has established him as Orlando's go-to player in crucial moments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moritz Wagner Card -->
+                <div class="player-card" data-player="moritz">
+                    <div class="player-image">
+                        <div class="image-placeholder">
+                            <span class="jersey-number">#21</span>
+                        </div>
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">Moritz Wagner</h3>
+                        <p class="player-position">Forward-Center</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">12.9</span>
+                                <span class="stat-label">PPG</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.9</span>
+                                <span class="stat-label">RPG</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">1.4</span>
+                                <span class="stat-label">APG</span>
+                            </div>
+                        </div>
+                        <div class="player-bio">
+                            <p>
+                                The older Wagner brother brings energy, toughness, and veteran leadership to the Magic.
+                                Moritz's physical play and court presence provide invaluable support off the bench.
+                                During the 2024-25 season, he was enjoying a career-best start with 12.9 points per game
+                                on an impressive 56.2% shooting. His intensity and hustle make him a fan favorite
+                                and a crucial piece of Orlando's rotation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Wagner Brothers Fan Site. Unofficial fan page for the Orlando Magic.</p>
+            <p class="footer-note">All stats from 2024-25 NBA Season</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
