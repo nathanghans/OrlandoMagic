@@ -55,6 +55,40 @@ If you prefer JPG format, convert using:
 
 ---
 
+### 3. Franz Wagner Player Photo
+**Filename:** `franz-wagner.webp` (preferred) or `franz-wagner.jpg`
+
+**Where to find:**
+- **NBA.com:** https://www.nba.com/player/1630532/franz-wagner - Official headshots and action photos
+- **Orlando Magic Official:** https://www.nba.com/magic/roster - Team roster photos
+- **ESPN:** https://www.espn.com/nba/player/_/id/4566434/franz-wagner
+- **Getty Images:** Search "Franz Wagner Orlando Magic headshot" (may require license)
+
+**Image specifications:**
+- Aspect ratio: 4:5 or 3:4 (portrait orientation recommended)
+- Minimum resolution: 800px width
+- Format: WebP, JPG, or PNG
+- Crop: Headshot or upper body preferred
+
+---
+
+### 4. Moritz Wagner Player Photo
+**Filename:** `moritz-wagner.webp` (preferred) or `moritz-wagner.jpg`
+
+**Where to find:**
+- **NBA.com:** https://www.nba.com/player/1629011/moritz-wagner - Official headshots and action photos
+- **Orlando Magic Official:** https://www.nba.com/magic/roster - Team roster photos
+- **ESPN:** https://www.espn.com/nba/player/_/id/3150844/moritz-wagner
+- **Getty Images:** Search "Moritz Wagner Orlando Magic headshot" (may require license)
+
+**Image specifications:**
+- Aspect ratio: 4:5 or 3:4 (portrait orientation recommended)
+- Minimum resolution: 800px width
+- Format: WebP, JPG, or PNG
+- Crop: Headshot or upper body preferred
+
+---
+
 ## Image Optimization
 
 Before adding images to this folder, consider optimizing them:

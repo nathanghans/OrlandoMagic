@@ -34,6 +34,13 @@ The site currently uses placeholder images. To use real photos:
    - ESPN or Yahoo Sports articles about the Wagner brothers
    - Getty Images (check licensing)
 
+### Player Headshots (Franz & Moritz)
+**Quick Download:**
+1. **Franz Wagner:** Visit [NBA.com Player Page](https://www.nba.com/player/1630532/franz-wagner) or [ESPN](https://www.espn.com/nba/player/_/id/4566434/franz-wagner)
+2. **Moritz Wagner:** Visit [NBA.com Player Page](https://www.nba.com/player/1629011/moritz-wagner) or [ESPN](https://www.espn.com/nba/player/_/id/3150844/moritz-wagner)
+3. Save headshots as `franz-wagner.webp` and `moritz-wagner.webp` (or .jpg)
+4. Photos will appear with a faded blue overlay and jersey numbers on top
+
 **See `assets/images/README.md` for detailed instructions and download links.**
 
 ## 2024-25 Season Stats
@@ -59,6 +66,10 @@ OrlandoMagic/
 │       ├── orlando-magic-logo.png         # Logo (replace with real logo)
 │       ├── wagner-brothers.webp           # Hero image - WebP format (recommended)
 │       ├── wagner-brothers.jpg            # Hero image - JPG fallback (placeholder)
+│       ├── franz-wagner.webp              # Franz headshot - WebP (recommended)
+│       ├── franz-wagner.jpg               # Franz headshot - JPG (placeholder)
+│       ├── moritz-wagner.webp             # Moritz headshot - WebP (recommended)
+│       ├── moritz-wagner.jpg              # Moritz headshot - JPG (placeholder)
 │       └── README.md                      # Image download instructions
 ├── index.html                             # Main HTML file
 ├── styles.css                             # CSS styles with Orlando Magic theme

@@ -1,0 +1,36 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Franz Wagner Placeholder Image -->
+    <!-- Replace this file with an actual photo of Franz Wagner -->
+
+    <!-- Background gradient -->
+    <defs>
+        <linearGradient id="franz-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#005A8D;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0077C0;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <rect width="800" height="500" fill="url(#franz-bg)"/>
+
+    <!-- Decorative elements -->
+    <circle cx="150" cy="100" r="80" fill="rgba(255,255,255,0.05)"/>
+    <circle cx="650" cy="400" r="120" fill="rgba(255,255,255,0.05)"/>
+    <circle cx="400" cy="250" r="60" fill="rgba(255,255,255,0.08)"/>
+
+    <!-- Large jersey number in background -->
+    <text x="400" y="320" font-family="Arial Black, sans-serif" font-size="280" font-weight="900" fill="rgba(255,255,255,0.15)" text-anchor="middle">22</text>
+
+    <!-- Player silhouette -->
+    <g opacity="0.25">
+        <ellipse cx="400" cy="450" rx="80" ry="20" fill="rgba(0,0,0,0.3)"/>
+        <rect x="370" y="250" width="60" height="200" rx="30" fill="white"/>
+        <circle cx="400" cy="200" r="50" fill="white"/>
+        <!-- Arms -->
+        <rect x="310" y="270" width="50" height="15" rx="7" fill="white" transform="rotate(-30 335 277)"/>
+        <rect x="440" y="270" width="50" height="15" rx="7" fill="white" transform="rotate(30 465 277)"/>
+    </g>
+
+    <!-- Text overlay -->
+    <text x="400" y="460" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">FRANZ WAGNER #22</text>
+    <text x="400" y="485" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.8)" text-anchor="middle">Replace with player photo • See assets/images/README.md</text>
+</svg>
