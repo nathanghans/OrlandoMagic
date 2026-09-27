@@ -721,6 +721,26 @@ body {
     color: var(--magic-silver);
 }
 
+/* Schedule Legend */
+.schedule-legend {
+    padding: 0.5rem 0 2rem;
+}
+
+.schedule-legend-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 /* Schedule Table */
 .schedule-section {
     padding: 2rem 0 5rem;
@@ -766,6 +786,34 @@ body {
     font-size: 0.8rem;
     padding: 0.3rem 0.7rem;
     border-radius: 20px;
+}
+
+.cup-badge {
+    display: inline-block;
+    background-color: rgba(212, 137, 15, 0.12);
+    color: #b5760b;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+}
+
+.schedule-table .month-row td {
+    background-color: var(--magic-black);
+    color: var(--magic-white);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.schedule-table .note-row td {
+    background-color: rgba(212, 137, 15, 0.08);
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 .schedule-note {
