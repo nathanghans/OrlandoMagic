@@ -1,52 +1,24 @@
-// Wagner Brothers Fan Site - Interactive Features
+// Orlando Magic 2026-27 Season Hub - Interactive Features
 
-// Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Active navigation link tracking
+    // Highlight the nav link matching the current page
     const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('section');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
-    // Update active nav link on scroll
-    function updateActiveNav() {
-        let current = '';
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-
-            if (window.pageYOffset >= (sectionTop - 100)) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
-    }
-
-    // Throttle scroll events for performance
-    let scrollTimeout;
-    window.addEventListener('scroll', function() {
-        if (scrollTimeout) {
-            window.cancelAnimationFrame(scrollTimeout);
-        }
-        scrollTimeout = window.requestAnimationFrame(function() {
-            updateActiveNav();
-        });
-    });
-
-    // Smooth scroll for navigation links
     navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        link.classList.toggle('active', linkPage === currentPage);
+    });
+
+    // Smooth scroll only for in-page anchor links (e.g. hero buttons on the home page)
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
 
             if (targetSection) {
+                e.preventDefault();
                 const headerOffset = 80;
                 const elementPosition = targetSection.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -59,32 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scroll for hero button
-    const heroButton = document.querySelector('.hero-button');
-    if (heroButton) {
-        heroButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-
-            if (targetSection) {
-                const headerOffset = 80;
-                const elementPosition = targetSection.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    }
-
-    // Add animation on scroll for player cards
-    const playerCards = document.querySelectorAll('.player-card');
+    // Fade-in animation for cards as they scroll into view
+    const animatedCards = document.querySelectorAll('.player-card, .news-card, .preview-card, .roster-card, .offseason-card');
 
     const observerOptions = {
-        threshold: 0.2,
+        threshold: 0.15,
         rootMargin: '0px 0px -50px 0px'
     };
 
@@ -92,34 +43,20 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '0';
-                entry.target.style.transform = 'translateY(30px)';
+                entry.target.style.transform = 'translateY(20px)';
 
-                setTimeout(() => {
-                    entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                requestAnimationFrame(() => {
+                    entry.target.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
-                }, 100);
+                });
 
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    playerCards.forEach(card => {
-        observer.observe(card);
-    });
+    animatedCards.forEach(card => observer.observe(card));
 
-    // Add subtle parallax effect to hero section
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const parallaxSpeed = 0.5;
-            hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-        });
-    }
-
-    // Console message for developers
-    console.log('%c Wagner Brothers Fan Site ', 'background: #0077C0; color: white; font-size: 16px; padding: 10px;');
-    console.log('%c Built with ❤️ for Orlando Magic fans ', 'background: #000; color: #0077C0; font-size: 12px; padding: 5px;');
+    console.log('%c Orlando Magic 2026-27 Season Hub ', 'background: #0077C0; color: white; font-size: 16px; padding: 10px;');
 });

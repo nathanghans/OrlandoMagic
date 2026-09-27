@@ -1,63 +1,39 @@
-# Wagner Brothers - Orlando Magic Fan Site
+# Orlando Magic 2026-27 Season Hub
 
-A minimal, responsive fan website dedicated to Franz and Moritz Wagner of the Orlando Magic.
+A fan site for the Orlando Magic's 2026-27 season: roster, schedule, news, and
+a home page built around the team's core four players.
 
-## Features
+## Pages
 
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Orlando Magic Branding**: Uses official team colors (blue #0077C0, black, white, silver)
-- **Player Profiles**: Detailed cards for both Franz and Moritz Wagner with 2024-25 season stats
-- **Modern UI**: Clean, professional design with smooth animations and interactions
-- **Vanilla JavaScript**: No frameworks required - pure HTML, CSS, and JavaScript
+- **`index.html`** &mdash; Home. Season-preview hero, "The Big 4" (Paolo Banchero,
+  Franz Wagner, Jalen Suggs, Desmond Bane), a season-outlook section, and a
+  preview of the latest news.
+- **`roster.html`** &mdash; Full 2026-27 roster grouped by position, head coach
+  Sean Sweeney, and an offseason transactions recap.
+- **`schedule.html`** &mdash; Season opener and the confirmed nationally
+  televised marquee games.
+- **`news.html`** &mdash; A reverse-chronological news feed of offseason and
+  preseason stories.
 
-## 🖼️ Adding Real Images
+## The Big 4
 
-The site currently uses placeholder images. To use real photos:
+| Player | # | Pos | 2025-26 PPG / RPG / APG |
+|---|---|---|---|
+| Paolo Banchero | 5 | F | 22.2 / 8.3 / 5.2 |
+| Franz Wagner | 22 | F | 20.6 / 5.2 / 3.3 |
+| Jalen Suggs | 4 | G | 13.8 / 3.9 / 5.5 |
+| Desmond Bane | 3 | G | 20.1 / 4.1 / 4.1 |
 
-### Orlando Magic Logo
-1. Download the official logo from:
-   - [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Orlando_Magic_Clear_Logo.svg) (SVG)
-   - [Loodibee](https://loodibee.com/nba/orlando-magic/) (PNG)
-   - [FreeBie Supply](https://freebiesupply.com/logos/orlando-magic-logo/)
+Bane joined Orlando via a June 2025 trade with Memphis. Franz Wagner's season
+was cut short by a high-ankle sprain (34 games played).
 
-2. Replace `assets/images/orlando-magic-logo.png` with your downloaded file
-3. Use PNG or SVG format with transparent background
+## Tech
 
-### Wagner Brothers Photo
-**Quick Download:**
-1. Right-click and download this image: [Wagner Brothers Photo](https://wp.clutchpoints.com/wp-content/uploads/2024/11/Magic-news-Franz-Moritz-Wagner-achieve-rare-NBA-brothers-feat-only-seen-once.jpg)
-2. Save as `assets/images/wagner-brothers.webp`, `wagner-brothers.avif`, or `wagner-brothers.jpg`
-3. **Modern formats** (AVIF/WebP) are recommended - they're smaller and faster!
-
-**Alternative sources:**
-   - Orlando Magic official website photo galleries
-   - ESPN or Yahoo Sports articles about the Wagner brothers
-   - Getty Images (check licensing)
-
-### Player Headshots (Franz & Moritz)
-**Quick Download:**
-1. **Franz Wagner:** Visit [NBA.com Player Page](https://www.nba.com/player/1630532/franz-wagner) or [ESPN](https://www.espn.com/nba/player/_/id/4566434/franz-wagner)
-2. **Moritz Wagner:** Visit [NBA.com Player Page](https://www.nba.com/player/1629011/moritz-wagner) or [ESPN](https://www.espn.com/nba/player/_/id/3150844/moritz-wagner)
-3. Save headshots with appropriate names: `franz-wagner.[avif/webp/jpg]` and `moritz-wagner.[avif/webp/jpg]`
-4. Photos will appear with a faded blue overlay and jersey numbers on top
-
-**Supported formats:** AVIF (best), WebP (great), or JPG (universal)
-
-**See `assets/images/README.md` for detailed instructions and download links.**
-
-## 2024-25 Season Stats
-
-### Franz Wagner (#22)
-- **Position**: Forward
-- **PPG**: 24.2
-- **RPG**: 5.7
-- **APG**: 4.7
-
-### Moritz Wagner (#21)
-- **Position**: Forward-Center
-- **PPG**: 12.9
-- **RPG**: 4.9
-- **APG**: 1.4
+- Plain HTML, CSS, and vanilla JavaScript &mdash; no build step, no frameworks.
+- Shared `styles.css` and `script.js` across all four pages.
+- `script.js` highlights the active nav link per page and fades in cards on
+  scroll; it no longer does single-page scroll-spying since the site is now
+  multi-page.
 
 ## File Structure
 
@@ -65,118 +41,52 @@ The site currently uses placeholder images. To use real photos:
 OrlandoMagic/
 ├── assets/
 │   └── images/
-│       ├── orlando-magic-logo.png         # Logo (replace with real logo)
-│       ├── wagner-brothers.avif           # Hero image - AVIF format (best)
-│       ├── wagner-brothers.webp           # Hero image - WebP format (fallback)
-│       ├── wagner-brothers.jpg            # Hero image - JPG (universal fallback)
-│       ├── franz-wagner.avif              # Franz headshot - AVIF (best)
-│       ├── franz-wagner.webp              # Franz headshot - WebP (fallback)
-│       ├── franz-wagner.jpg               # Franz headshot - JPG (universal fallback)
-│       ├── moritz-wagner.avif             # Moritz headshot - AVIF (best)
-│       ├── moritz-wagner.webp             # Moritz headshot - WebP (fallback)
-│       ├── moritz-wagner.jpg              # Moritz headshot - JPG (universal fallback)
-│       └── README.md                      # Image download instructions
-├── index.html                             # Main HTML file
-├── styles.css                             # CSS styles with Orlando Magic theme
-├── script.js                              # Interactive features and animations
-└── README.md                              # This file
+│       ├── orlando-magic-logo.svg / .png
+│       ├── franz-wagner.avif / .jpg      # used on the home page
+│       ├── moritz-wagner.*, wagner-brothers.*  # unused leftovers, safe to delete
+│       └── README.md                     # image sourcing notes
+├── index.html
+├── roster.html
+├── schedule.html
+├── news.html
+├── styles.css
+├── script.js
+└── README.md
 ```
+
+## Updating Content
+
+- **Stats / bios:** edit the Big 4 cards in `index.html`.
+- **Roster:** edit the position groups in `roster.html`. Jersey numbers marked
+  `TBD` weren't confirmed as of this writing.
+- **Schedule:** `schedule.html` lists the season opener and the confirmed
+  national-TV slate only (not the full 82-game schedule); update as more games
+  are announced.
+- **News:** add a new `<article class="news-card">` to the top of the grid in
+  `news.html` (and optionally to the 3-item preview on `index.html`).
+- **Colors:** defined as CSS variables at the top of `styles.css`:
+  ```css
+  :root {
+      --magic-blue: #0077C0;
+      --magic-black: #000000;
+      --magic-white: #FFFFFF;
+      --magic-silver: #C4CED4;
+      --magic-dark-blue: #005A8D;
+  }
+  ```
 
 ## Deploying to GitHub Pages
 
-### Option 1: Deploy from Branch
-
-1. Push your code to GitHub:
-   ```bash
-   git add .
-   git commit -m "Add Wagner Brothers fan site"
-   git push -u origin claude/magic-wagner-fan-site-wKj2V
-   ```
-
-2. Go to your GitHub repository settings
-3. Navigate to **Pages** in the left sidebar
-4. Under **Source**, select your branch (`claude/magic-wagner-fan-site-wKj2V`)
-5. Select the root folder `/`
-6. Click **Save**
-7. Your site will be published at: `https://<username>.github.io/<repository-name>/`
-
-### Option 2: Deploy from Main Branch
-
-1. Create a pull request to merge your changes into the main branch
-2. After merging, go to repository **Settings** → **Pages**
-3. Select the main branch as the source
-4. Your site will be available at: `https://<username>.github.io/<repository-name>/`
-
-### Option 3: Quick Deploy
-
-If you want to deploy immediately from the current branch:
-
-```bash
-# Make sure all files are committed
-git add .
-git commit -m "Wagner Brothers fan site ready for deployment"
-git push -u origin claude/magic-wagner-fan-site-wKj2V
-
-# Enable GitHub Pages via GitHub CLI (if available)
-gh repo edit --enable-pages
-```
-
-## Customization
-
-### Updating Player Stats
-
-Edit the stats in `index.html` within the `.player-stats` sections:
-
-```html
-<div class="stat">
-    <span class="stat-value">24.2</span>
-    <span class="stat-label">PPG</span>
-</div>
-```
-
-### Changing Colors
-
-All colors are defined as CSS variables in `styles.css`:
-
-```css
-:root {
-    --magic-blue: #0077C0;
-    --magic-black: #000000;
-    --magic-white: #FFFFFF;
-    --magic-silver: #C4CED4;
-    --magic-dark-blue: #005A8D;
-}
-```
-
-### Adding Player Photos
-
-Replace the `.image-placeholder` div in `index.html` with an actual image:
-
-```html
-<div class="player-image">
-    <img src="path/to/franz-wagner.jpg" alt="Franz Wagner">
-</div>
-```
-
-Then update the CSS to style the image properly.
-
-## Browser Compatibility
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+1. Push this branch to GitHub.
+2. In the repository, go to **Settings → Pages**.
+3. Under **Source**, select this branch and the root folder `/`.
+4. Save. The site will publish at `https://<username>.github.io/<repository-name>/`.
 
 ## License
 
-This is an unofficial fan site. All trademarks and copyrights belong to the Orlando Magic and the NBA.
-
-## Credits
-
-- Stats sourced from NBA.com and ESPN
-- Built with vanilla HTML, CSS, and JavaScript
-- Orlando Magic colors and branding
+This is an unofficial fan site. All trademarks and copyrights belong to the
+Orlando Magic and the NBA.
 
 ---
 
-**Go Magic! 🪄**
+**Go Magic!**

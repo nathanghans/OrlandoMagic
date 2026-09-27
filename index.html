@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fan website dedicated to Franz and Moritz Wagner of the Orlando Magic">
-    <title>Wagner Brothers | Orlando Magic</title>
+    <meta name="description" content="Fan hub for the 2026-27 Orlando Magic season: roster, schedule, and news, featuring Paolo Banchero, Franz Wagner, Jalen Suggs, and Desmond Bane.">
+    <title>Orlando Magic | 2026-27 Season Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,12 +16,14 @@
                     <img src="assets/images/orlando-magic-logo.svg" alt="Orlando Magic Logo" class="logo-image">
                     <div class="logo-text">
                         <h1>Orlando Magic</h1>
-                        <p>Wagner Brothers</p>
+                        <p>2026-27 Season</p>
                     </div>
                 </div>
                 <nav class="nav">
-                    <a href="#home" class="nav-link active">Home</a>
-                    <a href="#players" class="nav-link">Players</a>
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="roster.html" class="nav-link">Roster</a>
+                    <a href="schedule.html" class="nav-link">Schedule</a>
+                    <a href="news.html" class="nav-link">News</a>
                 </nav>
             </div>
         </div>
@@ -29,34 +31,80 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-background">
-            <picture>
-                <source srcset="assets/images/wagner-brothers.webp" type="image/webp">
-                <img src="assets/images/wagner-brothers.jpg" alt="Franz and Moritz Wagner" class="hero-image">
-            </picture>
-        </div>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">The Wagner Brothers</h2>
-                <p class="hero-subtitle">Two Brothers, One Dream, Orlando Magic</p>
-                <p class="hero-description">
-                    Franz and Moritz Wagner have brought their German precision, basketball IQ,
-                    and undeniable chemistry to the Orlando Magic. Together, they're helping build
-                    a new era of Magic basketball with skill, passion, and brotherhood.
-                </p>
-                <a href="#players" class="hero-button">Meet the Players</a>
+                <p class="hero-eyebrow">2026-27 Season</p>
+                <h2 class="hero-title">A New Era Under Sean Sweeney</h2>
+                <p class="hero-subtitle">Coming off a 45-37 season and a first-round exit, the Magic bring back Nikola Vučević and a healthier core built around four rising stars.</p>
+                <div class="hero-buttons">
+                    <a href="roster.html" class="hero-button">Meet the Roster</a>
+                    <a href="schedule.html" class="hero-button hero-button-secondary">See the Schedule</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Players Section -->
-    <section class="players" id="players">
-        <div class="container">
-            <h2 class="section-title">Player Profiles</h2>
+    <!-- Key Dates Strip -->
+    <section class="key-dates">
+        <div class="container key-dates-content">
+            <div class="key-date">
+                <span class="key-date-label">Season Opener</span>
+                <span class="key-date-value">Wed, Oct 21 &middot; vs Atlanta Hawks</span>
+            </div>
+            <div class="key-date">
+                <span class="key-date-label">Tip-Off</span>
+                <span class="key-date-value">7:00 PM ET &middot; Kia Center</span>
+            </div>
+            <div class="key-date">
+                <span class="key-date-label">Head Coach</span>
+                <span class="key-date-value">Sean Sweeney (1st Season)</span>
+            </div>
+            <a href="schedule.html" class="key-dates-link">Full schedule &rarr;</a>
+        </div>
+    </section>
 
-            <div class="player-cards">
-                <!-- Franz Wagner Card -->
+    <!-- Big 4 Section -->
+    <section class="players" id="big-four">
+        <div class="container">
+            <h2 class="section-title">The Big 4</h2>
+            <p class="section-subtitle">The core Orlando is building around for the 2026-27 season and beyond.</p>
+
+            <div class="player-cards big-four-grid">
+                <!-- Paolo Banchero -->
+                <div class="player-card" data-player="banchero">
+                    <div class="player-image">
+                        <div class="player-image-overlay"></div>
+                        <span class="jersey-number">#5</span>
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">Paolo Banchero</h3>
+                        <p class="player-position">Forward</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">22.2</span>
+                                <span class="stat-label">PPG</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">8.3</span>
+                                <span class="stat-label">RPG</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5.2</span>
+                                <span class="stat-label">APG</span>
+                            </div>
+                        </div>
+                        <div class="player-bio">
+                            <p>
+                                The 2022-23 NBA Rookie of the Year and two-time All-Star remains Orlando's
+                                offensive centerpiece, leading the team in scoring, rebounding, and
+                                shot creation heading into 2026-27.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Franz Wagner -->
                 <div class="player-card" data-player="franz">
                     <div class="player-image">
                         <div class="player-photo-background">
@@ -73,66 +121,89 @@
                         <p class="player-position">Forward</p>
                         <div class="player-stats">
                             <div class="stat">
-                                <span class="stat-value">24.2</span>
+                                <span class="stat-value">20.6</span>
                                 <span class="stat-label">PPG</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-value">5.7</span>
+                                <span class="stat-value">5.2</span>
                                 <span class="stat-label">RPG</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-value">4.7</span>
+                                <span class="stat-value">3.3</span>
                                 <span class="stat-label">APG</span>
                             </div>
                         </div>
                         <div class="player-bio">
                             <p>
-                                The younger Wagner brother has emerged as a cornerstone of the Magic franchise.
-                                Franz's versatility and two-way play make him one of the NBA's rising stars.
-                                In the 2024-25 season, he averaged a career-high 24.2 points per game,
-                                ranking 15th in the NBA in scoring. His ability to score, facilitate, and
-                                defend has established him as Orlando's go-to player in crucial moments.
+                                A high-ankle sprain limited Wagner to 34 games in 2025-26, but he still
+                                averaged over 20 points a night and shot a career-best 34.5% from three.
+                                He enters the season looking to stay healthy and reclaim his All-Star form.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Moritz Wagner Card -->
-                <div class="player-card" data-player="moritz">
+                <!-- Jalen Suggs -->
+                <div class="player-card" data-player="suggs">
                     <div class="player-image">
-                        <div class="player-photo-background">
-                            <picture>
-                                <source srcset="assets/images/moritz-wagner.webp" type="image/webp">
-                                <img src="assets/images/moritz-wagner.jpg" alt="Moritz Wagner" class="player-photo">
-                            </picture>
-                        </div>
                         <div class="player-image-overlay"></div>
-                        <span class="jersey-number">#21</span>
+                        <span class="jersey-number">#4</span>
                     </div>
                     <div class="player-info">
-                        <h3 class="player-name">Moritz Wagner</h3>
-                        <p class="player-position">Forward-Center</p>
+                        <h3 class="player-name">Jalen Suggs</h3>
+                        <p class="player-position">Guard</p>
                         <div class="player-stats">
                             <div class="stat">
-                                <span class="stat-value">12.9</span>
+                                <span class="stat-value">13.8</span>
                                 <span class="stat-label">PPG</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-value">4.9</span>
+                                <span class="stat-value">3.9</span>
                                 <span class="stat-label">RPG</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-value">1.4</span>
+                                <span class="stat-value">5.5</span>
                                 <span class="stat-label">APG</span>
                             </div>
                         </div>
                         <div class="player-bio">
                             <p>
-                                The older Wagner brother brings energy, toughness, and veteran leadership to the Magic.
-                                Moritz's physical play and court presence provide invaluable support off the bench.
-                                During the 2024-25 season, he was enjoying a career-best start with 12.9 points per game
-                                on an impressive 56.2% shooting. His intensity and hustle make him a fan favorite
-                                and a crucial piece of Orlando's rotation.
+                                Orlando's defensive anchor took on a bigger playmaking load in 2025-26
+                                while Banchero and Wagner battled injuries, and remains one of the
+                                league's most disruptive perimeter defenders.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desmond Bane -->
+                <div class="player-card" data-player="bane">
+                    <div class="player-image">
+                        <div class="player-image-overlay"></div>
+                        <span class="jersey-number">#3</span>
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">Desmond Bane</h3>
+                        <p class="player-position">Guard</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">20.1</span>
+                                <span class="stat-label">PPG</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.1</span>
+                                <span class="stat-label">RPG</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.1</span>
+                                <span class="stat-label">APG</span>
+                            </div>
+                        </div>
+                        <div class="player-bio">
+                            <p>
+                                Acquired from Memphis in a blockbuster June 2025 trade, Bane gave Orlando
+                                the floor-spacing wing it had been missing, playing all 82 games in his
+                                first Magic season alongside the team's young core.
                             </p>
                         </div>
                     </div>
@@ -141,11 +212,71 @@
         </div>
     </section>
 
+    <!-- Season Preview -->
+    <section class="preview">
+        <div class="container">
+            <h2 class="section-title">Season Preview</h2>
+            <div class="preview-grid">
+                <div class="preview-card">
+                    <h3>New Voice on the Bench</h3>
+                    <p>
+                        Orlando fired Jamahl Mosley in May after five seasons and hired Sean Sweeney,
+                        formerly an associate head coach with the San Antonio Spurs, as head coach on
+                        June 1, 2026.
+                    </p>
+                </div>
+                <div class="preview-card">
+                    <h3>Vučević Comes Home</h3>
+                    <p>
+                        Nikola Vučević re-signed with the Magic on a one-year deal, returning to the
+                        team where he had his most success and adding size, shooting, and experience
+                        at center.
+                    </p>
+                </div>
+                <div class="preview-card">
+                    <h3>A Quiet, Steady Offseason</h3>
+                    <p>
+                        Jonathan Isaac and Jevon Carter re-signed on minimum deals and the Magic added
+                        rookie Izaiyah Nelson (No. 51 pick) on a two-way deal, betting continuity and
+                        health can push a 45-37 team further than a first-round exit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Preview -->
+    <section class="news-preview">
+        <div class="container">
+            <div class="section-header-row">
+                <h2 class="section-title">Latest News</h2>
+                <a href="news.html" class="see-all-link">See all news &rarr;</a>
+            </div>
+            <div class="news-grid news-grid-preview">
+                <article class="news-card">
+                    <span class="news-date">September 2026</span>
+                    <h3>Magic Expand TV Reach Into Tampa Market</h3>
+                    <p>A new full-season agreement with Hearst-owned WMOR-TV gives Orlando a complete broadcast presence in Tampa for 2026-27.</p>
+                </article>
+                <article class="news-card">
+                    <span class="news-date">August 13, 2026</span>
+                    <h3>2026-27 Regular Season Schedule Released</h3>
+                    <p>The Magic open the season at home against the Atlanta Hawks on Wednesday, October 21 at Kia Center.</p>
+                </article>
+                <article class="news-card">
+                    <span class="news-date">June 1, 2026</span>
+                    <h3>Sean Sweeney Named Head Coach</h3>
+                    <p>Orlando hires the former Spurs associate head coach to replace Jamahl Mosley, who was let go in May.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Wagner Brothers Fan Site. Unofficial fan page for the Orlando Magic.</p>
-            <p class="footer-note">All stats from 2024-25 NBA Season</p>
+            <p>&copy; 2026 Orlando Magic Fan Hub. Unofficial fan site for the Orlando Magic.</p>
+            <p class="footer-note">Stats reflect the 2025-26 NBA season, current as of September 2026.</p>
         </div>
     </footer>
 
